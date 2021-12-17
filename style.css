@@ -26,20 +26,24 @@ header h1 {
 nav {
     position: sticky;
     top: 0;
-
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 /*move buttons to the right side*/
 ul {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #000;
+
+    /*background-color: #000;*/
 }
+
 
 /*Change font of nav items*/
 li,
 a {
     font-family: "Corbel Light";
+    font-size: 25px;
     text-decoration: none;
     color: orangered;
 
@@ -189,4 +193,35 @@ footer {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: orangered;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    margin-right: 20px;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+       display: block;
+    }
+    .nav-links{
+        display: none;
+        width: 100%;
+    }
+    .nav-links.show{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+    }
+
 }

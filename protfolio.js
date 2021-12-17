@@ -1,6 +1,9 @@
 // Get the modal
 let modal = document.getElementById("myModal");
 let modal2 = document.getElementById("myModal2");
+//Get menu button
+const hamburger = document.querySelector(".hamburger");
+const navList = document.querySelector(".nav-links");
 // Get the button that opens the modal
 let btn = document.getElementById("myBtn");
 let btn2 = document.getElementById("myBtn2");
@@ -34,3 +37,7 @@ window.onclick = function (event) {
         modal2.style.display = "none";
     }
 }
+
+hamburger.addEventListener("click",() =>{
+    navList.classList.toggle('show');
+})
