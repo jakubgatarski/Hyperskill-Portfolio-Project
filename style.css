@@ -4,15 +4,19 @@
 }
 header{
     background-image: url('bg.jpg');
-    background-size: 70%;
-    line-height: 400px;
+    height: 600px;
+    background-size: 1405px;
     color: orange;
     display: flex;
     justify-content: flex-start;
     padding: 30px 10%;
 }
-h1{
-    display: inline;
+header h1{
+    width:400px;
+    display:inline-block;
+    margin-left:60px;
+    transform: translate(0,350px);
+
 }
 
 
