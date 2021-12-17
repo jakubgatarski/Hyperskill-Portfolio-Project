@@ -3,42 +3,48 @@
 <head>
     <meta charset="utf-8">
     <title>Portfolio Page</title>
-    <header><h1>Jakub Gątarski</h1></header>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <nav>
-    <a href="#about">About me</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contacts">Contacts</a>
+    <ul class="nav-links">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#home">HOME</a></li>
+    </ul>
 </nav>
+<header id="home"><h1>Jakub Gątarski, Wannabe climber, Front-end</h1></header>
 <section id="about">
+    <img id="my-photo" src="photo.jpg"><br>
     <h2>About me</h2>
-    <img src="photo.jpg"><br>
     <p>Hi, I'm Jakub Gątarski. I'm studding at Poznan University of Technology for my BA in Automatics and Robotics</p>
 </section>
 <section id="portfolio">
-    <section>
-        <h2>PORTFOLIO</h2>
-        <img src="openspace.PNG" height="50%" width="50%" alt="Open space project screen">
-        <p>Open Space</p>
-    </section>
-    <section>
-        <img src="flashcards.PNG" height="50%" width="50%" alt="Flashcards project screen">
-        <p>Flashcards</p>
-    </section>
 
-    <section id="contacts">
-        My socials<br>
-        <img src="github.svg" height="10%" width="10%">
-        <img src="twitter.svg" height="10%" width="10%">
-        <img src="instagram.svg" height="10%" width="10%">
-        <img src="facebook.svg" height="10%" width="10%">
-    </section>
+    <h2 class="portfolio-header">PORTFOLIO</h2>
+    <img id="open-space-img" src="openspace.PNG" alt="Open space project screen">
+    <img id="flashcards-img" src="flashcards.PNG" alt="Flashcards project screen">
+    <p>Open Space</p>
+    <p>Flashcards</p>
+
+</section>
+<section id="contacts">
+    <h2> Contacts</h2>
+    <p> You can contact me <a href="mailto: abc@example.com">Email</a></p>
+    <div id="contacts-images">
+        <img class="img-contact" src="github.svg">
+        <img class="img-contact" src="twitter.svg" >
+        <img class="img-contact" src="instagram.svg" >
+        <img class="img-contact" src="facebook.svg">
+    </div>
+</section>
 </section>
 <footer>
-   Contact me
-
-
+    Established in 2021<br>
+    thanks to me XD
 </footer>
 </body>
 </html>
